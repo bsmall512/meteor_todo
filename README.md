@@ -1,0 +1,3 @@
+I am unable to complete the click event handlers attached to the "Sort By" buttons. I know how to sort the collection by those parameters on the command line, but the layer of abstraction that keeps the db calls private is throwing me off. I'm speaking specifically about the tasks.prioritize function in the api. Feel free to reach out if you have any questions. My email is brian.m.small@gmail.com 
+
+Thanks for taking to the time to speak with me this week. I look forward to hearing from you. Have a great weekend.
