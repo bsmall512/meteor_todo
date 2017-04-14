@@ -1,0 +1,31 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List ({{incompleteCount}})</h1>
+    </header>
+    <label class="hide-completed">
+        <input type="checkbox" />
+        Hide Completed Tasks
+    </label>
+    <button class="sortByDeadline">Sort by Deadline</button>
+    <button class="sortByPriority">Sort by Priority</button>
+      
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+         <form class="new-task">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+          <input type="text" name="deadline" placeholder="Type to add deadline" />  
+          <input type="submit" style="display: none;"/>      
+        </form>
+      {{/if}}
+
+      
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
