@@ -80,6 +80,6 @@ Meteor.methods({
     Tasks.update(taskId, { $set: { private: setToPrivate } });
   },
   'tasks.prioritize'() {
-    Tasks.find({}, {sort: {priority: 1}});
-  }
+    Tasks.sort({"priority": 1});
+  },
 });

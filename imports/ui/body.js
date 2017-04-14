@@ -57,9 +57,6 @@ Template.body.events({
   'change .hide-completed input'(event, instance) {
     instance.state.set('hideCompleted', event.target.checked);
   },
-  'click .sortByDeadline'(){
-    return Tasks.find({}, {sort: {deadline: -1}});
-  },
   'click .sortByPriority' (event){
     Meteor.call('tasks.prioritize')
   },
